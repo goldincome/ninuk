@@ -1,0 +1,10 @@
+/vendor/
+/node_modules/
+/.env
+/public/public/
+/public/upload/
+/public/upload/agents/
+/public/uploads/
+/public/geolite_db/
+/public/sitemap/
+/.vscode/
