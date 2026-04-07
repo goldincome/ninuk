@@ -1,15 +1,13 @@
-@extends('layouts.app')
-
-@section('title')
+<?php $__env->startSection('title'); ?>
     Register for your Nigerian BVN Number and open bank account in UK
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('description')
+<?php $__env->startSection('description'); ?>
     BVN UK - Register to process your Nigerian BVN number and open new Nigerian Bank account right here in UK for Nigerians
     in diaspora (mostly UK).
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
     <script>
         $(document).ready(function () {
 
@@ -43,12 +41,12 @@
             catch (e) { }
         }
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div>
-        @include('common.page-navlink')
+        <?php echo $__env->make('common.page-navlink', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <div class="relative">
             <div class="container md:flex md:space-x-10 py-10 relative z-20">
 
@@ -70,10 +68,10 @@
                             From £50
                         </div>
                         <div class="mt-6 flex space-x-2">
-                            <a href="{{route('bookings.index')}}" class="btn btn-nin-green btn-lg">
+                            <a href="<?php echo e(route('bookings.index')); ?>" class="btn btn-nin-green btn-lg">
                                 Book Now
                             </a>
-                            <a href="{{ route('bvn') }}#requirements" class="btn btn-transparent-black btn-lg">
+                            <a href="<?php echo e(route('bvn')); ?>#requirements" class="btn btn-transparent-black btn-lg">
                                 Learn More
                             </a>
                         </div>
@@ -82,7 +80,7 @@
 
                 <div class="md:w-1/2 hidden md:block">
                     <div class="flex justify-end" style="height: 500px">
-                        <img src={{asset('img/bgs/bvn-bank-account.png')}} alt="logo" class="h-full object-contain" />
+                        <img src=<?php echo e(asset('img/bgs/bvn-bank-account.png')); ?> alt="logo" class="h-full object-contain" />
                     </div>
                 </div>
 
@@ -95,15 +93,15 @@
 
 
         <div>
-            @include('common.wavy')
+            <?php echo $__env->make('common.wavy', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             <div class="transform rotate-180 bg-white">
-                @include('common.wavy')
+                <?php echo $__env->make('common.wavy', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
         </div>
 
 
 
-        @include('common.bvn-bank-acct-requirements')
+        <?php echo $__env->make('common.bvn-bank-acct-requirements', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
 
@@ -186,7 +184,7 @@
             <div class="container">
                 <div class="md:flex md:space-x-8">
                     <div class="md:w-6/12 flex md:hidden mb-10 md:mb-0 rounded-xl overflow-hidden">
-                        <img src={{asset('img/bgs/why-need-bvn.png')}} alt="nin" class="w-full my-auto relative" />
+                        <img src=<?php echo e(asset('img/bgs/why-need-bvn.png')); ?> alt="nin" class="w-full my-auto relative" />
                     </div>
                     <div class="w-full md:w-6/12">
                         <div class="font-extrabold text-3xl md:text-4xl xl:text-5xl leading-10">
@@ -238,7 +236,7 @@
                             </div>
                         </div>
                         <div class="mt-10">
-                            <a href="{{route('bookings.index')}}" class="btn btn-nin-green btn-lg">
+                            <a href="<?php echo e(route('bookings.index')); ?>" class="btn btn-nin-green btn-lg">
                                 Book Now
                             </a>
                         </div>
@@ -250,7 +248,7 @@
                         </div>
                     </div>
                     <div class="md:w-6/12 hidden md:flex rounded-xl overflow-hidden">
-                        <img src={{asset('img/bgs/why-need-bvn.png')}} alt="nin" class="w-full my-auto relative" />
+                        <img src=<?php echo e(asset('img/bgs/why-need-bvn.png')); ?> alt="nin" class="w-full my-auto relative" />
                     </div>
                 </div>
             </div>
@@ -280,7 +278,7 @@
                         for Nigerians residing in the UK
                     </div>
                     <div class="flex space-x-4 mt-5">
-                        <a href="{{route('bookings.index')}}" class="btn text-black bg-white btn-lg shadow-lg">
+                        <a href="<?php echo e(route('bookings.index')); ?>" class="btn text-black bg-white btn-lg shadow-lg">
                             Book Now
                         </a>
                     </div>
@@ -289,7 +287,7 @@
             <div class="bg-img-under bg-wavy"></div>
         </div>
 
-        {{-- @include('common.bvn-bank-acct-faqs') --}}
+        
 
         <!-- Get Started Section -->
         <div>
@@ -305,7 +303,7 @@
                                 </div>
                                 <div class="flex px-4 mt-3 sm:mt-6 xl:mt-10">
                                     <div class="m-auto flex space-x-2 md:space-x-4">
-                                        <a href="{{route('bookings.index')}}"
+                                        <a href="<?php echo e(route('bookings.index')); ?>"
                                             class="btn text-black bg-white btn-lg shadow-lg">
                                             <span class="fa fa-calendar mr-2"></span>
                                             Book Now
@@ -313,7 +311,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center mt-2">
-                                    <a href="{{ route('contactUs') }}" class="text-white hover:underline">Contact us for
+                                    <a href="<?php echo e(route('contactUs')); ?>" class="text-white hover:underline">Contact us for
                                         further assistance</a>
                                 </div>
                             </div>
@@ -326,4 +324,5 @@
         <!-- End Get Started Section -->
 
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\nin-uk\resources\views/bvn.blade.php ENDPATH**/ ?>

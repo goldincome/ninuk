@@ -1,15 +1,12 @@
-@extends('layouts.app')
-
-
-@section('title')
+<?php $__env->startSection('title'); ?>
     Nigerian NIN Registration UK
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('description')
+<?php $__env->startSection('description'); ?>
     enrolment. The license covers Nigerian residents in London, Europe, and the United Kingdom
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
     <script>
         $(document).ready(function () {
 
@@ -41,30 +38,15 @@
             } catch (e) { }
         }
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div>
 
 
-        {{--
-        <div class="ad-banner-1 w-full h-40 bg-white flex align-middle items-center justify-center overflow-hidden">
-            <div class="container relative">
-                <a href="https://freeki.com" target="_blank" class="block relative">
-                    <div onclick="closebanner(1); return false"
-                        class="px-2 py-1 h-5 absolute top-0 right-0 text-xs bg-black bg-opacity-50 flex space-x-2 text-white hover:bg-opacity-100">
-                        <span class="fa fa-times"></span>
-                        <span class="-mt-0.5">
-                            Close
-                        </span>
-                    </div>
-                    <img src={{asset('img/bgs/banner.jpg')}} alt="logo" class="w-full h-full object-contain " />
-                </a>
-            </div>
-        </div>
-        --}}
-        @include('common.page-navlink')
+        
+        <?php echo $__env->make('common.page-navlink', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
         <div class="relative">
@@ -86,7 +68,7 @@
                             From £80
                         </div>
                         <div class="mt-6 flex space-x-2">
-                            <a href="{{ route('birthCertificateOptions') }}" class="btn btn-nin-green btn-lg">
+                            <a href="<?php echo e(route('birthCertificateOptions')); ?>" class="btn btn-nin-green btn-lg">
                                 Book Now
                             </a>
                             <a href="/#requirements" class="btn btn-transparent-black btn-lg">
@@ -98,7 +80,7 @@
 
                 <div class="md:w-1/2 hidden md:block">
                     <div class="flex justify-end" style="height: 500px">
-                        <img src={{ asset('img/bgs/home-bg.png') }} alt="logo" class="h-full object-contain" />
+                        <img src=<?php echo e(asset('img/bgs/home-bg.png')); ?> alt="logo" class="h-full object-contain" />
                     </div>
                 </div>
 
@@ -106,20 +88,20 @@
 
             <div class="w-full h-full opacity-40 img-bg3 absolute inset-0 z-10"></div>
         </div>
-        @include('common.error-and-message')
-        @include('common.other-services')
+        <?php echo $__env->make('common.error-and-message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('common.other-services', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
         <div>
-            @include('common.wavy')
+            <?php echo $__env->make('common.wavy', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             <div class="transform rotate-180 bg-white">
-                @include('common.wavy')
+                <?php echo $__env->make('common.wavy', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
         </div>
 
 
 
-        @include('common.requirements')
+        <?php echo $__env->make('common.requirements', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
 
@@ -202,7 +184,7 @@
             <div class="container">
                 <div class="md:flex md:space-x-8">
                     <div class="md:w-6/12 flex md:hidden mb-10 md:mb-0 rounded-xl overflow-hidden">
-                        <img src={{ asset('img/bgs/why-need-nin.jpeg') }} alt="nin" class="w-full my-auto relative" />
+                        <img src=<?php echo e(asset('img/bgs/why-need-nin.jpeg')); ?> alt="nin" class="w-full my-auto relative" />
                     </div>
                     <div class="w-full md:w-6/12">
                         <div class="font-extrabold text-3xl md:text-4xl xl:text-5xl leading-10">
@@ -261,7 +243,7 @@
                             </div>
                         </div>
                         <div class="mt-10">
-                            <a href="{{ route('birthCertificateOptions') }}" class="btn btn-nin-green btn-lg">
+                            <a href="<?php echo e(route('birthCertificateOptions')); ?>" class="btn btn-nin-green btn-lg">
                                 Book Now
                             </a>
                         </div>
@@ -273,7 +255,7 @@
                         </div>
                     </div>
                     <div class="md:w-6/12 hidden md:flex rounded-xl overflow-hidden">
-                        <img src={{ asset('img/bgs/why-need-nin.jpeg') }} alt="nin" class="w-full my-auto relative" />
+                        <img src=<?php echo e(asset('img/bgs/why-need-nin.jpeg')); ?> alt="nin" class="w-full my-auto relative" />
                     </div>
                 </div>
             </div>
@@ -281,7 +263,7 @@
             <div class="pt-10 container">
                 <div class="md:flex md:space-x-8">
                     <div class="md:w-6/12 flex my-10 md:my-0 rounded-xl overflow-hidden">
-                        <img src={{ asset('img/bgs/nin-adv.png') }} alt="nin" class="my-auto" />
+                        <img src=<?php echo e(asset('img/bgs/nin-adv.png')); ?> alt="nin" class="my-auto" />
                     </div>
                     <div class="w-full md:w-6/12 md:mt-10">
                         <div class="text-3xl sm:text-4xl xl:text-5xl font-semibold font-boing text-ep-black">
@@ -357,7 +339,7 @@
                             </div>
                         </div>
                         <div class="mt-10">
-                            <a href="{{ route('birthCertificateOptions') }}" class="btn btn-nin-green btn-lg">
+                            <a href="<?php echo e(route('birthCertificateOptions')); ?>" class="btn btn-nin-green btn-lg">
                                 Book Now
                             </a>
                         </div>
@@ -394,7 +376,7 @@
                         the UK
                     </div>
                     <div class="flex space-x-4 mt-5">
-                        <a href="{{ route('birthCertificateOptions') }}" class="btn text-black bg-white btn-lg shadow-lg">
+                        <a href="<?php echo e(route('birthCertificateOptions')); ?>" class="btn text-black bg-white btn-lg shadow-lg">
                             Book Now
                         </a>
                     </div>
@@ -405,79 +387,16 @@
 
 
 
-        @include('common.faqs')
+        <?php echo $__env->make('common.faqs', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
-        {{--
-        <!-- Main modal -->
-        <div id="crud-modal" tabindex="-1" aria-hidden="true"
-            class="flex overflow-y-auto fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative p-4 w-full max-w-lg">
-                <!-- Modal content -->
-                <div class="relative bg-black rounded-lg shadow-lg">
-                    <!-- Modal header -->
-                    <div class="flex  justify-between p-5 border-b border-gray-200">
-                        <h3 class="ml-10 text-lg font-extrabold text-white">Important Announcement!!!</h3>
-                        <button type="button"
-                            class="mr-4 text-white hover:text-white hover:bg-gray-100 rounded-lg text-sm w-8 h-8 flex items-center justify-center"
-                            onclick="document.getElementById('crud-modal').classList.add('hidden')">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <form class="p-6 space-y-4" action="{{ route('nin-notification.store') }}" method="POST">
-                        @csrf
-                        <input type="hidden" name="type" value="nin_registration_down">
-                        <div
-                            style="background-color: rgb(247, 197, 33); font-weight: bold; text-align: center; margin-bottom: 10px;">
-                            NIN Registration is Down globally due to a system upgrade.
-                            <br>To ge notified when the service is back up, please fill out the form below.
-                            <br>We apologize for the inconvenience.
-                        </div>
-                        <div class="form-group">
-                            <label for="name" class="block text-sm font-medium text-white">Your Name<span
-                                    class="form-input-required">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required
-                                class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="block text-sm font-medium text-white">Your Email<span
-                                    class="form-input-required">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required
-                                class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone_no" class="block text-sm font-medium text-white">Your Phone Number<span
-                                    class="form-input-required">*</span></label>
-                            <input type="number" id="phone_no" name="phone_no" placeholder="Enter your phone number"
-                                required class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="description" class="block text-sm font-medium text-white">Message Request</label>
-                            <textarea id="message" name="message" rows="2" placeholder="Write your request  here..."
-                                class="form-input"></textarea>
-                        </div>
+        
 
-                        <div class="flex justify-end space-x-2">
-                            <button type="submit"
-                                class="btn btn-nin-green text-white hover:bg-green-600 transition-all duration-200">
-                                Send
-                            </button>
-                            <button type="button" class="btn btn-transparent-white text-white hover:bg-black"
-                                onclick="document.getElementById('crud-modal').classList.add('hidden')">
-                                Cancel
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        --}}
-
-        @include('common.get-started')
+        <?php echo $__env->make('common.get-started', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
     </div>
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\nin-uk\resources\views/home.blade.php ENDPATH**/ ?>

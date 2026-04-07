@@ -1,14 +1,12 @@
-@extends('layouts.app')
-
-@section('title')
+<?php $__env->startSection('title'); ?>
     Birth Certificate Options
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('description')
+<?php $__env->startSection('description'); ?>
     Choose your birth certificate option to continue the NIN registration process.
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="container my-10">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-10">
@@ -74,15 +72,11 @@
                                 </button>
                                 to confirm if what you have matches this.
                             </p>
-                            <a href="{{ route('bookings.index') }}" class="btn btn-nin-green btn-md"
+                            <a href="<?php echo e(route('bookings.index')); ?>" class="btn btn-nin-green btn-md"
                                 style="font-size: 1rem; font-weight: 500;">
                                 Click here to Proceed to NIN Application Booking
                             </a>
-                            {{-- <p class="mt-1 text-gray-700">
-                                An official Attestation of birth certificate issued by the National Population Commission
-                                (NPC) at birth in Nigeria.
-                            </p>
-                            --}}
+                            
                         </div>
 
                     </div>
@@ -98,13 +92,13 @@
                             <p class="mt-1 text-gray-700">
                                 Assistance with NPC attestation only £35. NPC with NIN discount to £20 when paying for both
                                 (£20 + £80) NIN £80, total £100 when completing your NIN enrollment with us.
-                                <!-- @if (!is_null($attestationBirthCertificate))
+                                <!-- <?php if(!is_null($attestationBirthCertificate)): ?>
                                                 <br />The cost to assist for NPC Attestation of Birth Certificate application is
-                                                <strong>£{{ $attestationBirthCertificate->ourService->price }}</strong> per person.
-                                            @endif
+                                                <strong>£<?php echo e($attestationBirthCertificate->ourService->price); ?></strong> per person.
+                                            <?php endif; ?>
                                             -->
                             </p>
-                            <a href="{{ route('pre-checkout.show', $attestationBirthCertificate ? $attestationBirthCertificate->slug : '') }}"
+                            <a href="<?php echo e(route('pre-checkout.show', $attestationBirthCertificate ? $attestationBirthCertificate->slug : '')); ?>"
                                 class="btn btn-nin-orange btn-md" style="font-size: 1rem; font-weight: 500;">
                                 Click to Apply for NPC Attestation of Birth Certificate.
                             </a>
@@ -137,7 +131,7 @@
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900">I have my NPC Notification of Birth
                                     Certificate</h4>
-                                <a href="{{ route('bookings.index') }}" class="btn btn-nin-green btn-md"
+                                <a href="<?php echo e(route('bookings.index')); ?>" class="btn btn-nin-green btn-md"
                                     style="font-size: 1rem; font-weight: 500;">
                                     Click here to Proceed to NIN Application Booking
                                 </a>
@@ -157,13 +151,13 @@
                                     Assistance with NPC attestation only £35. NPC with NIN discount to £20 when paying for
                                     both
                                     (£20 + £80) NIN £80, total £100 when completing your NIN enrollment with us.
-                                    <!-- @if (!is_null($notificationBirthCertificate))
+                                    <!-- <?php if(!is_null($notificationBirthCertificate)): ?>
                                             <br />The cost to assist for NPC Notification of Birth Certificate application is
-                                            <strong>£{{ $notificationBirthCertificate->ourService->price }}</strong> per person.
-                                        @endif
+                                            <strong>£<?php echo e($notificationBirthCertificate->ourService->price); ?></strong> per person.
+                                        <?php endif; ?>
                             -->
                                 </p>
-                                <a href="{{ route('pre-checkout.show', $notificationBirthCertificate ? $notificationBirthCertificate->slug : '') }}"
+                                <a href="<?php echo e(route('pre-checkout.show', $notificationBirthCertificate ? $notificationBirthCertificate->slug : '')); ?>"
                                     class="btn btn-nin-orange btn-md" style="font-size: 1rem; font-weight: 500;">
                                     Click to Apply for NPC Notification of Birth Certificate.
                                 </a>
@@ -204,7 +198,7 @@
                 <div
                     class="w-full h-96 bg-gray-200 flex items-center justify-center rounded-lg border-2 border-dashed border-gray-400">
 
-                    <img src="{{ asset('img/bgs/attestation-cert.png') }}" alt="NPC Attestation Sample"
+                    <img src="<?php echo e(asset('img/bgs/attestation-cert.png')); ?>" alt="NPC Attestation Sample"
                         class="w-auto h-auto max-w-full max-h-[80vh] object-contain shadow-lg border border-gray-300">
 
                 </div>
@@ -218,8 +212,8 @@
             </div>
         </div>
     </div>
-@endsection
-@section('js')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
     <script>
         $(document).ready(function () {
             // Initially hide the content divs
@@ -306,4 +300,5 @@
             });
         });
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\nin-uk\resources\views/birth-certificate-options.blade.php ENDPATH**/ ?>
