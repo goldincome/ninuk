@@ -35,7 +35,7 @@
             </div>
             <div class="text-m lg:text-xl font-semibold text-center">
                 <span class="fa fa-id-card text-xl text-white"></span> 
-                Get Youtr Virtual Office Address Now!
+                Get Your Virtual Office Address Now!
             </div>  
         </a> 
         
