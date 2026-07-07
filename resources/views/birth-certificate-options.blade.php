@@ -153,7 +153,7 @@
                                 <h4 class="text-lg font-semibold text-gray-900">I do not have NPC Notification of Birth
                                     Certificate</h4>
                                 <p class="mt-1 text-gray-700">
-                                    Assistance with NPC attestation only £50. You are paying (£50 + £80) NIN £80, total £100 when completing your NIN enrollment with us.
+                                    Assistance with NPC attestation only £50. You are paying (£50 + £80) NIN £80, total £130 when completing your NIN enrollment with us.
                                     <!-- @if (!is_null($notificationBirthCertificate))
                                             <br />The cost to assist for NPC Notification of Birth Certificate application is
                                             <strong>£{{ $notificationBirthCertificate->ourService->price }}</strong> per person.
