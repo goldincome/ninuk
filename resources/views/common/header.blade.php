@@ -18,8 +18,8 @@
                 <div class="flex h-full justify-end">
                     {{-- <div class="flex my-auto space-x-8 lg:space-x-12 xl:mr-24"> --}}
                     <div class="flex my-auto space-x-8 ">
-                        <a href="{{route('tin')}}" class="header-links {{ request()->routeIs('tin') ? 'active' : '' }}">
-                            Tax Identification Number(TIN)
+                        <a href="https://charltonvirtualoffice.com" target="_blank" class="header-links {{ request()->routeIs('tin') ? 'active' : '' }}">
+                            Get Virtual Office Address
                         </a>
                         
                         <a href="{{route('home')}}" class="header-links {{ request()->routeIs('home') ? 'active' : '' }}">
@@ -66,7 +66,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('flightTicket') }}" class="header-links {{ request()->routeIs('flightTicket') ? 'active' : '' }} block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <a href="https://nurud.com" target="_blank" class="header-links {{ request()->routeIs('flightTicket') ? 'active' : '' }} block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     Cheap Flight Ticket To Nigeria
                                 </a>
                             </li>
@@ -108,10 +108,10 @@
                                         <a href="{{ route('nigerianPassport') }}" class="header-links-mobile {{ request()->routeIs('nigerianPassport') ? 'active' : '' }}">Passport Application Assistance</a>
                                     </div>
                                     <div>
-                                        <a href="{{ route('tin') }}" class="header-links-mobile {{ request()->routeIs('tin') ? 'active' : '' }}">Tax Number(TIN) Application Assistance</a>
+                                        <a href="https://charltonvirtualoffice.com" target="_blank" class="header-links-mobile {{ request()->routeIs('tin') ? 'active' : '' }}">Get Virtual Office Address</a>
                                     </div>
                                     <div>
-                                        <a href="{{ route('flightTicket') }}" class="header-links-mobile {{ request()->routeIs('flightTicket') ? 'active' : '' }}">Cheap Flight Ticket To Nigeria</a>
+                                        <a href="https://nurud.com" target="_blank" class="header-links-mobile {{ request()->routeIs('flightTicket') ? 'active' : '' }}">Cheap Flight Ticket To Nigeria</a>
                                     </div>
                                     
                                     <div>

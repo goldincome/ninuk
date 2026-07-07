@@ -28,14 +28,14 @@
             </div>
         </a>
 
-        <a href="{{ route('tin') }}" 
+        <a href="https://charltonvirtualoffice.com" target="_blank"
             class="h-full block p-2 xl:p-4 rounded-xl shadow-sm text-white bg-nin relative {{ request()->routeIs('tin') ? 'active-link' : '' }}" 
             style="background-color: orange"> 
             <div class="flex items-center justify-center">    
             </div>
             <div class="text-m lg:text-xl font-semibold text-center">
                 <span class="fa fa-id-card text-xl text-white"></span> 
-                Enroll For Your Tax Indentification Number (TIN)
+                Get Youtr Virtual Office Address Now!
             </div>  
         </a> 
         
@@ -49,7 +49,7 @@
                 Passport Application Assistance
             </div>  
         </a>
-  <a href="{{ route('flightTicket') }}" 
+  <a href="https://nurud.com" target="_blank" 
    class="relative h-full block p-2 xl:p-4 rounded-xl shadow-sm text-white bg-nin" 
    style="background-color: orange;"> 
     <div class="flex items-center justify-center"></div> 

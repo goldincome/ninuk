@@ -66,7 +66,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="{{route('flightTicket')}}" class="font-light hover:text-nin-green">
+                            <a href="https://nurud.com" target="_blank" class="font-light hover:text-nin-green">
                                 <span class="fa fa-angle-right mr-2"></span>
                                 Get Cheap Flight To Nigeria
                             </a>

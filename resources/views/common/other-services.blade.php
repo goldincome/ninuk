@@ -7,7 +7,7 @@
 <div class="relative z-10 container">
     <div class="mx-auto overflow-hidden grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 xl:gap-8">
 
-        <a href="{{ route('flightTicket') }}" 
+        <a href="https://nurud.com" target="_blank"
             class="h-full block p-2 xl:p-4 rounded-xl shadow-sm  relative {{ request()->routeIs('flightTicket') ? 'active-link' : '' }}" style="background-color:gray">
             <div class="text-xl lg:text-xl font-semibold text-center text-white ">
                 Cheap Flight Ticket To Nigeria
@@ -26,7 +26,7 @@
             </div>  
         </a> 
     
-        <a href="#" class="h-full block p-2 xl:p-4 rounded-xl shadow-sm" style="background-color:gray">
+        <a href="https://charltonvirtualoffice.com" target="_blank" class="h-full block p-2 xl:p-4 rounded-xl shadow-sm" style="background-color:gray">
             <div class="text-xl lg:text-xl font-semibold text-center text-white">
                 Virtual Office in London
             </div>  
